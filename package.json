@@ -1,0 +1,52 @@
+{
+  "name": "gogolee-react-progress-circle",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.config.js",
+    "build": "rm -rf lib && mkdir lib && webpack --config config/webpack.prod.config.js",
+    "pub": "npm run build && npm publish",
+    "build:dev": "webpack --config config/webpack.dev.config.js"
+  },
+  "description": "A progress circle which shows percentage with animation",
+  "keywords": [
+    "react",
+    "react-component",
+    "svg"
+  ],
+  "author": "gogo",
+  "dependencies": {
+    "postcss-loader": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "gogo-react-spin": "^1.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-normalize": "^8.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-markdown": "^4.2.2",
+    "react-syntax-highlighter": "^11.0.2",
+    "sass": "^1.23.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^4.2.2"
+  },
+  "peerDependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}
