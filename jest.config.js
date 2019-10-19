@@ -9,5 +9,5 @@ module.exports = {
     },
     "testRegex": "\\.test\\.(jsx?|tsx?)$",
     collectCoverage: true,
-    "coverageDirectory": "<rootDir>/__tests__/coverage",
+    "coverageDirectory": "../coverage",
 };
