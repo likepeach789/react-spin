@@ -69,7 +69,7 @@ class Progress extends Component {
                     <div>
                         <svg className="my-progress-bar" viewBox={this.getViewBox()} width={this.state.svg.width} height={this.state.svg.height}>
                             <circle className="circle-bg" {...this.state.circle}></circle>
-                            <circle className="circle-path" {...this.state.circle} style={{ 'strokeDasharray': this.state.strokeDasharray, 'stroke': this.props.strokeColor || '#5116d0'}}></circle>
+                            <circle className="circle-path" {...this.state.circle} style={{ 'strokeDasharray': this.state.strokeDasharray, 'stroke': this.props.strokeColor}}></circle>
                             {
                                 this.props.isTextShown
                                 &&
@@ -90,13 +90,13 @@ Progress.propTypes = {
     number: PropTypes.number.isRequired,
     width: PropTypes.number,
     height: PropTypes.number,
-    strokeWidth: PropTypes.number,
     isTextShown: PropTypes.bool,
     strokeColor: PropTypes.string
 }
 
 Progress.defaultProps = {
-    isTextShown: true
+    isTextShown: true,
+    strokeColor: '#5116d0'
 };
 
 export default Progress;

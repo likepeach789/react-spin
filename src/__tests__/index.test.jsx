@@ -22,6 +22,21 @@ describe('<Progress />', () => {
         expect(wrapper.find("button").html()).toEqual('<button>test</button>')
     });
 
+    it('renders children when passed in', () => {
+        const wrapper = mount((
+            <Progress number={20}>
+                <button>test</button>
+            </Progress>
+        ));
+        expect(wrapper.find("button").html()).toEqual('<button>test</button>')
+    });
 
+    it('renders text show 20 %', () => {
+        const wrapper = mount((
+            <Progress number={20}>
+            </Progress>
+        ));
+        expect(wrapper.find(".progress-text").text()).toEqual('20 %');
+    });
 
 });
