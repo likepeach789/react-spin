@@ -1,5 +1,5 @@
 $progress-circle-bg-color: #efefef;
-$progress-circle-path-color: #5116d0;
+// $progress-circle-path-color: #5116d0;
 
 .my-progress-container {
     position: relative;
@@ -14,7 +14,7 @@ $progress-circle-path-color: #5116d0;
         }
         .circle-path {
             fill: none;
-            stroke: $progress-circle-path-color;
+            // stroke: $progress-circle-path-color;
             stroke-linecap: round;
             transform: rotate(-90deg);
             transform-origin: center;
